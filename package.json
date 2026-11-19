@@ -1,0 +1,63 @@
+{
+  "name": "cortico-world-skillhost",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Cortico World: 技能宿主。把 OmniAgent 的技能包（含 skill.json 与 index.js 的文件夹）放进一个目录，填好 Key，技能里注册的工具就变成可调用的工具；设置页能按技能分页填 Key、开关、卸载。要求 Cortico 0.2.0 / Coopanion 0.2.5 及以上。",
+  "author": {
+    "name": "落花无声"
+  },
+  "license": "MIT",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "assets",
+    "describe.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "coopanion",
+    "skill-host",
+    "skill",
+    "omniagent",
+    "extension"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "技能宿主",
+    "icon": "assets/icon.svg",
+    "describe": "describe.json",
+    "webUiClient": "src/webui.js",
+    "tags": [
+      "tools",
+      "extension",
+      "experimental"
+    ],
+    "locales": {
+      "zh": {
+        "displayName": "技能宿主",
+        "description": "把 OmniAgent 的技能包（zip 解压后的文件夹）放进技能目录，它自己读 skill.json、加载 index.js，把技能里注册的工具变成我能调用的工具；Key、接口地址、发送目标用设置页或 skill_config 填。技能丢进去不用重启，每个技能可以单独关掉。"
+      },
+      "en": {
+        "displayName": "Skill host",
+        "description": "Drop an OmniAgent skill folder into the skills directory; it reads skill.json, loads index.js and turns the skill's registered tools into tools I can call. Keys, base URLs and the send target are set in the settings page or with skill_config. New skills are picked up without a restart, and each skill can be switched off on its own."
+      }
+    }
+  },
+  "dependencies": {}
+}
