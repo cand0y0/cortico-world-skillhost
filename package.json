@@ -1,6 +1,6 @@
 {
   "name": "cortico-world-skillhost",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Cortico World: 技能宿主。把 OmniAgent 的技能包（含 skill.json 与 index.js 的文件夹）放进一个目录，填好 Key，技能里注册的工具就变成可调用的工具；设置页能按技能分页填 Key、开关、卸载。要求 Cortico 0.2.0 / Coopanion 0.2.5 及以上。",
   "author": {

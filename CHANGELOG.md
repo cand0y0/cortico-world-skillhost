@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 — 2026-11-19
+
+只有元数据：市场那边联系不上作者，因为 `package.json` 里没有仓库地址。
+
+- 补 `repository` / `bugs` / `homepage`，指向 <https://github.com/cand0y0/cortico-world-skillhost>。
+- 代码零改动，和 0.1.0 行为一致。
+
 ## 0.1.0 — 2026-11-17
 
 首个版本。
