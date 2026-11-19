@@ -7,6 +7,14 @@
     "name": "落花无声"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cand0y0/cortico-world-skillhost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cand0y0/cortico-world-skillhost/issues"
+  },
+  "homepage": "https://github.com/cand0y0/cortico-world-skillhost#readme",
   "main": "./src/index.js",
   "exports": {
     ".": "./src/index.js",
